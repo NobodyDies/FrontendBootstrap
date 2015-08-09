@@ -12,11 +12,5 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('style.scss', 'public/css')
-		.less('app.less', 'public/cms/css')
-		.scripts([
-			"jquery-2.1.3.min.js",
-			"jquery.magnific-popup.min.js",
-		    "slider.js"
-		], 'public/js/app.min.js', 'resources/assets/js');
+    mix.sass('style.scss', 'css', 'sass');
 });
